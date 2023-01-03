@@ -1,0 +1,38 @@
+.header{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.section-1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#txt{
+    height: 10vh;
+    width: 50%;
+    text-align: center;
+}
+
+.section-2{
+    text-align: center;
+    display: block;
+    margin-bottom: 4rem;
+}
+
+.div{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#output{
+    border: 1px solid black;
+    width: 50%;
+    height: 10vh;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.footer{
+    text-align: center;
+}

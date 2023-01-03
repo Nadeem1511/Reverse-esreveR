@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse</title>
+    <title>Numbers</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <h1>Reverse</h1>
+        <h1>Numbers</h1>
     </header>
 
-    <main>
-        <section class="section-1">
-            <textarea name="Text-area" id="txt" placeholder="Write any sentance to reverse."></textarea>
-        </section>
+    <div class="container">
+        <div class="section-1">
+            <textarea name="Text-area" id="txt" placeholder="Type only in numbers to see the magic."></textarea>
+        </div>
 
-        <section class="section-2">
-            <button>Reverse It</button>
-        </section>
+        <div class="section-2">
+            <button id="btn">How much is this</button>
+        </div>
 
-        <div class="div">
+        <div class="div" id="output">
 
         </div>
-    </main>
+    </div>
 
     <footer>
         <div class="footer">
-            <p>Converts every sentance to reverse.
+            <p>Converts plain numbers to spelled out text.
                 <br>
                 This website is created to practice HTML,CSS and Javascript.   
             </p>
-            <p>© 2023 Nadeem's Reverse Website</p>
+            <p>© 2023 Nadeem's Numbers Website</p>
         </div>
     </footer>
+
+    <script src="app.js"></script>
 
 </body>
 </html>
