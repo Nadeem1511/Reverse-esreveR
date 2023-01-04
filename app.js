@@ -12,7 +12,7 @@ function translationUrl(txtInput){
 
 function errorHandling(error){
     console.log("Error Occured", error);
-    alert("Something went wrong,Please try again later")
+    alert("Something is wrong with the server : Please try again later")
 }
 
 function clickHandler(){
@@ -23,7 +23,7 @@ function clickHandler(){
         var translatedTxt = json.contents.translated;
         output.innerText = translatedTxt;
     })
-    .catch(errorHandler)
+    .catch(errorHandling)
 };
 
 btnTranslate.addEventListener("click", clickHandler);
