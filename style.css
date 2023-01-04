@@ -1,6 +1,39 @@
+:root{
+    --gradient: linear-gradient(
+      45deg,
+      #03076e,
+      #d90f0f,
+      #0249ed
+    );
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: var(--gradient);
+    min-height: 100vh;
+    background-size: 400%;
+    background-position: center;
+    animation: bg-animation 18s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+
 .header{
     text-align: center;
     margin-bottom: 5rem;
+    margin-top: 0;
+    color: whitesmoke;
+}
+
+h1{
+    display: inline-block;
+    font-weight: 800;
+    text-decoration: underline;
 }
 
 .section-1{
@@ -12,6 +45,8 @@
     height: 10vh;
     width: 50%;
     text-align: center;
+    font-family: 'Raleway';
+    border-color: whitesmoke;
 }
 
 .section-2{
@@ -20,13 +55,44 @@
     margin-bottom: 4rem;
 }
 
+#btn{
+    font-family: 'Raleway';
+    padding: .5rem 1.5rem;
+    font-size: .75rem;
+    font-weight: 500;
+    border: 0;
+    border-radius: 1em;
+    color: whitesmoke;
+    background-image: var(--gradient);
+    background-size: 300%;
+    background-position: left;
+    transition: 2s;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-position: center;
+}
+
+.des{
+    margin-bottom: 1.5rem;
+}
+
+#des{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
 .div{
     text-align: center;
+    background-color: beige;
     margin-bottom: 5rem;
 }
 
 #output{
-    border: 1px solid black;
+    border: 1px solid whitesmoke;
     width: 50%;
     height: 10vh;
     margin: auto;
@@ -35,4 +101,5 @@
 
 .footer{
     text-align: center;
+    color: whitesmoke;
 }
